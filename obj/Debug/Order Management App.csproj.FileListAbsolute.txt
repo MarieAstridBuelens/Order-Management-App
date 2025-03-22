@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Programmes C#\Order Management App\bin\Debug\Order Management App.exe.config
+C:\Users\Admin\Desktop\Programmes C#\Order Management App\bin\Debug\Order Management App.exe
+C:\Users\Admin\Desktop\Programmes C#\Order Management App\bin\Debug\Order Management App.pdb
+C:\Users\Admin\Desktop\Programmes C#\Order Management App\obj\Debug\Order Management App.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Programmes C#\Order Management App\obj\Debug\Order Management App.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Programmes C#\Order Management App\obj\Debug\Order Management App.exe
+C:\Users\Admin\Desktop\Programmes C#\Order Management App\obj\Debug\Order Management App.pdb
