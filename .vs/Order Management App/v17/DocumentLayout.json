@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|c:\\users\\admin\\desktop\\programmes c#\\order management app\\product\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|solutionrelative:product\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|c:\\users\\admin\\desktop\\programmes c#\\order management app\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|c:\\users\\admin\\desktop\\programmes c#\\order management app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|c:\\users\\admin\\desktop\\programmes c#\\order management app\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|solutionrelative:customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|c:\\users\\admin\\desktop\\programmes c#\\order management app\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C13F6C22-FE07-43C4-8570-CC3737751792}|Order Management App.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,19 +31,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Order.cs",
+              "RelativeDocumentMoniker": "Order.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Order.cs",
+              "RelativeToolTip": "Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T21:15:01.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Customer.cs",
+              "RelativeDocumentMoniker": "Customer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Customer.cs",
+              "RelativeToolTip": "Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T21:00:47.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Product\\Product.cs",
-              "RelativeDocumentMoniker": "Product\\Product.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Product\\Product.cs",
-              "RelativeToolTip": "Product\\Product.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAwwAkAAAAFAAAA",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Product.cs",
+              "RelativeDocumentMoniker": "Product.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Product.cs",
+              "RelativeToolTip": "Product.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T18:50:28.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programmes C#\\Order Management App\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
