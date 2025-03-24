@@ -14,18 +14,36 @@ namespace Order_Management_App
         public List<Product> Products { get; set; }
         public DateTime OrderDate { get; set; }
         public decimal TotalOrderAmount { get; set; }
+        public bool DiscountApplied { get; set; }
 
         //Methods
         public void AddProduct(Product product, int quantity)
         {
-            if (product == null) throw new ArgumentNullException("The product has not been found.");
-            else if (quantity <= 0) throw new ArgumentOutOfRangeException("The quantity is not valid.");
-            else if (quantity > product.ProductStockQuantity) throw new InsufficientStockException();
-            else
+            try
             {
-                Products.Add(product);
+                if (product == null) throw new ArgumentNullException("The product has not been found.");
+                else if (quantity <= 0) throw new ArgumentOutOfRangeException("The quantity is not valid.");
+                else
+                {
+                    for (int i = 0; i < quantity; i++)
+                    {
+                        Products.Add(product);
+                    }
+                }
             }
-            
+            catch(ArgumentNullException ex)
+            {
+                Console.WriteLine(ex.GetType());
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Operation cancelled. Continuing with the next operation...");
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.GetType());
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Operation cancelled. Continuing with the next operation...");
+            }
+
         }
 
         public decimal CalculateTotal()
@@ -34,6 +52,7 @@ namespace Order_Management_App
             {
                 TotalOrderAmount += product.ProductPrice;
             }
+            ApplyDiscount(0.1M);
             return TotalOrderAmount;
         }
 
@@ -41,7 +60,26 @@ namespace Order_Management_App
         {
             if (TotalOrderAmount > 300)
             {
-                TotalOrderAmount *= percentage;
+                TotalOrderAmount *= (1 - percentage);
+                DiscountApplied = true;
+            }
+        }
+
+        public void OrderDisplay(Order order)
+        {
+            Console.WriteLine("Here are you order details:");
+            Console.WriteLine($"    * Order ID = {order.OrderId}");
+            Console.WriteLine($"    * Customer = {order.Customer.CustomerName}");
+            Console.WriteLine($"    * Order Date = {order.OrderDate}");
+            Console.WriteLine($"    * Products in cart = {order.Products.Count}");
+            foreach (Product product in Products)
+            {
+                Console.WriteLine($"        - {product.ProductName} ({product.ProductPrice} euros)");
+            }
+            Console.WriteLine($"    * Total order amount = {order.TotalOrderAmount} euros");
+            if (DiscountApplied)
+            {
+                Console.WriteLine($"        => A discount has been applied!");
             }
         }
     }

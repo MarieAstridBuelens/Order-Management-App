@@ -40,21 +40,24 @@ namespace Order_Management_App
         //Methods
         public void Sell(int quantity)
         {
-            if (ProductStockQuantity < quantity)
-            {
-                throw new InsufficientStockException("There is not enough stock to sell the requested quantity.");
-            }
-            
             try
             {
-                ProductStockQuantity -= quantity;
-                Console.WriteLine($"Stock updated. New quantity: {ProductStockQuantity}");
+                if (ProductStockQuantity < quantity)
+                {
+                    throw new InsufficientStockException();
+                }
+                else
+                {
+                    ProductStockQuantity -= quantity;
+                    Console.WriteLine($"Stock updated. New quantity of {ProductName}: {ProductStockQuantity}");
+                }
 
             }
-            catch (Exception ex)
+            catch (InsufficientStockException ex)
             {
                 Console.WriteLine(ex.GetType());
                 Console.WriteLine(ex.Message);
+                Console.WriteLine("Operation cancelled. Continuing with the next operation...");
             }
         }
     }
