@@ -42,7 +42,7 @@ namespace Order_Management_App
         {
             if (ProductStockQuantity < quantity)
             {
-                throw new ArgumentOutOfRangeException("The order exceeds the quantity in stock!");
+                throw new InsufficientStockException("There is not enough stock to sell the requested quantity.");
             }
             
             try
